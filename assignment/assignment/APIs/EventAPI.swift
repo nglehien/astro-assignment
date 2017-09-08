@@ -20,11 +20,7 @@ class EventAPI: AstroRestAPI<Event> {
         return "/ams/v3/getEvents"
     }
     
-    public func getOnAirEventByChannelIds(channelIds:[Int], completion: @escaping ([Event], Error?) -> Void) {
-        
-        // Pre-condition for event period
-        let periodStart:Date = Date()
-        let periodEnd:Date = periodStart.addingTimeInterval(Constant.kOneWeekInterval)
+    public func getOnAirEventByChannelIds(channelIds:[Int], startTime:Date, endTime:Date, completion: @escaping ([Event], Error?) -> Void) {
         let dateFormat:DateFormatter = DateFormatter()
         dateFormat.timeZone = TimeZone.current
         dateFormat.dateFormat = Constant.kDatetimeFormat
@@ -33,9 +29,9 @@ class EventAPI: AstroRestAPI<Event> {
         
         let parameters:[String:String] = [
             "channelId"     : channelIds.description,
-            "periodStart"   : dateFormat.string(from: periodStart),
-            "periodEnd"     : dateFormat.string(from: periodEnd)
-            ]
+            "periodStart"   : dateFormat.string(from: startTime),
+            "periodEnd"     : dateFormat.string(from: endTime)
+        ]
         
         self.query(parameters: parameters) { (events:[Event], error) in
             guard error == nil else {

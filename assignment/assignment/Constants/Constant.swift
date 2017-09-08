@@ -10,6 +10,7 @@ import UIKit
 
 class Constant: NSObject {
     public static let kOneWeekInterval:TimeInterval = 7 * 24 * 3600
+    public static let kHalfDayInterval:TimeInterval = 12 * 3600
     
     public static let kDatetimeFormatWithMilisecond:String = "yyyy-MM-dd HH:mm:ss.z"
     public static let kDatetimeFormat:String = "yyyy-MM-dd HH:mm"
