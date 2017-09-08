@@ -10,6 +10,12 @@ import UIKit
 
 class EventAPI: AstroRestAPI<Event> {
     
+    static var instance:EventAPI = EventAPI()
+    
+    private override init() {
+        
+    }
+    
     override func apiPath() -> String {
         return "/ams/v3/getEvents"
     }

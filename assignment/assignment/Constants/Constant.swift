@@ -14,4 +14,6 @@ class Constant: NSObject {
     public static let kDatetimeFormatWithMilisecond:String = "yyyy-MM-dd HH:mm:ss.z"
     public static let kDatetimeFormat:String = "yyyy-MM-dd HH:mm"
     public static let kTimeIntervalFormat:String = "HH:mm:ss"
+    
+    public static let astroEndPoint:String = "http://ams-api.astro.com.my"
 }

@@ -10,6 +10,12 @@ import UIKit
 
 class ChannelAPI: AstroRestAPI<Channel> {
     
+    static var instance:ChannelAPI = ChannelAPI()
+    
+    private override init() {
+        
+    }
+    
     override func apiPath() -> String {
         return "/ams/v3/getChannels"
     }

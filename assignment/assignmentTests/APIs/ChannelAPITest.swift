@@ -13,6 +13,7 @@ class ChannelAPITest: XCTestCase {
     override func setUp() {
         super.setUp()
         // Put setup code here. This method is called before the invocation of each test method in the class.
+
     }
     
     override func tearDown() {
@@ -21,10 +22,8 @@ class ChannelAPITest: XCTestCase {
     }
 
     func test_Get_Channel_By_Id() {
-        let api:ChannelAPI = ChannelAPI()
         let expectation:XCTestExpectation = self.expectation(description: "get_by_id")
-        
-        api.getById(id: 1) { (chanel, error) in
+        ChannelAPI.instance.getById(id: 1) { (chanel, error) in
             XCTAssertNil(error)
             XCTAssertNotNil(chanel)
             XCTAssertEqual(chanel?.title, "HBO")
@@ -39,9 +38,8 @@ class ChannelAPITest: XCTestCase {
     }
     
     func test_Get_Channel_All() {
-        let api:ChannelAPI = ChannelAPI()
         let expectation:XCTestExpectation = self.expectation(description: "get_by_id")
-        api.getAll { (chanels, error) in
+        ChannelAPI.instance.getAll { (chanels, error) in
             XCTAssertNil(error)
             expectation.fulfill()
         }

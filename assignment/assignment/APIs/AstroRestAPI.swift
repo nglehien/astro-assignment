@@ -10,15 +10,14 @@ import UIKit
 import Alamofire
 
 class AstroRestAPI<T:JsonObjectSerializable> : NSObject {
-    // astro apis endpoint
-    internal let endpoint:String = "http://ams-api.astro.com.my"
     
+    // astro apis endpoint
     internal func apiPath() -> String {
         return ""
     }
     
     internal func query(parameters:Parameters?, completion: @escaping ([T], Error?) -> Void) {
-        let url:URLConvertible = "\(endpoint)\(self.apiPath())"
+        let url:URLConvertible = "\(Constant.astroEndPoint)\(self.apiPath())"
         Alamofire.request(url, parameters:parameters)
             .validate()
             .responseJSON { response in

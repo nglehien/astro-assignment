@@ -27,10 +27,9 @@ class EventAPITest: XCTestCase {
     }
     
     func test_get_on_air_event_by_id() -> Void {
-        let event:EventAPI = EventAPI()
         
         let expectation:XCTestExpectation = self.expectation(description: "get_by_id")
-        event.getOnAirEventByChannelIds(channelIds: [1]) { (events, error) in
+        EventAPI.instance.getOnAirEventByChannelIds(channelIds: [1]) { (events, error) in
             XCTAssertNil(error)
             expectation.fulfill()
         }
