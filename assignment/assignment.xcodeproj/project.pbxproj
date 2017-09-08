@@ -13,6 +13,22 @@
 		7C380FAF1F60D90100FE4C89 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7C380FAE1F60D90100FE4C89 /* Assets.xcassets */; };
 		7C380FB21F60D90100FE4C89 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7C380FB01F60D90100FE4C89 /* LaunchScreen.storyboard */; };
 		7C380FBD1F60D90200FE4C89 /* assignmentTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C380FBC1F60D90200FE4C89 /* assignmentTests.swift */; };
+		7C380FCD1F60DDDA00FE4C89 /* AstroRestAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C380FCC1F60DDDA00FE4C89 /* AstroRestAPI.swift */; };
+		7C380FCF1F60DE8800FE4C89 /* ChannelAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C380FCE1F60DE8800FE4C89 /* ChannelAPI.swift */; };
+		7C380FD21F60E0D100FE4C89 /* Channel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C380FD11F60E0D100FE4C89 /* Channel.swift */; };
+		7C380FD41F60F52100FE4C89 /* ChannelAPITest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C380FD31F60F52100FE4C89 /* ChannelAPITest.swift */; };
+		7C380FD51F60F5B200FE4C89 /* ChannelAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C380FCE1F60DE8800FE4C89 /* ChannelAPI.swift */; };
+		7C380FD61F60F5C400FE4C89 /* Channel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C380FD11F60E0D100FE4C89 /* Channel.swift */; };
+		7C380FD71F60F5CF00FE4C89 /* AstroRestAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C380FCC1F60DDDA00FE4C89 /* AstroRestAPI.swift */; };
+		7C380FDA1F61056C00FE4C89 /* AstroProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C380FD91F61056C00FE4C89 /* AstroProtocol.swift */; };
+		7C380FDB1F61064500FE4C89 /* AstroProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C380FD91F61056C00FE4C89 /* AstroProtocol.swift */; };
+		7C380FDF1F61223D00FE4C89 /* EventAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C380FDE1F61223D00FE4C89 /* EventAPI.swift */; };
+		7C380FE31F61228500FE4C89 /* EventAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C380FDE1F61223D00FE4C89 /* EventAPI.swift */; };
+		7C380FE51F61229E00FE4C89 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C380FE41F61229E00FE4C89 /* Event.swift */; };
+		7C380FE61F61229E00FE4C89 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C380FE41F61229E00FE4C89 /* Event.swift */; };
+		7C380FEC1F6131A100FE4C89 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C380FEB1F6131A100FE4C89 /* Constant.swift */; };
+		7C380FED1F6131A100FE4C89 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C380FEB1F6131A100FE4C89 /* Constant.swift */; };
+		7C380FF01F6132E400FE4C89 /* EventAPITest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C380FEE1F6132E400FE4C89 /* EventAPITest.swift */; };
 		91632DFD73DCDC0B8F6E32B5 /* Pods_assignmentTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9DB8767BDAABFFB32C69ED2 /* Pods_assignmentTests.framework */; };
 		A702F0964AC7E58EA53C0499 /* Pods_assignment.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 918C36929E3158538CAEA725 /* Pods_assignment.framework */; };
 /* End PBXBuildFile section */
@@ -40,6 +56,15 @@
 		7C380FB81F60D90200FE4C89 /* assignmentTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = assignmentTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7C380FBC1F60D90200FE4C89 /* assignmentTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = assignmentTests.swift; sourceTree = "<group>"; };
 		7C380FBE1F60D90200FE4C89 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7C380FCC1F60DDDA00FE4C89 /* AstroRestAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AstroRestAPI.swift; sourceTree = "<group>"; };
+		7C380FCE1F60DE8800FE4C89 /* ChannelAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelAPI.swift; sourceTree = "<group>"; };
+		7C380FD11F60E0D100FE4C89 /* Channel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Channel.swift; sourceTree = "<group>"; };
+		7C380FD31F60F52100FE4C89 /* ChannelAPITest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelAPITest.swift; sourceTree = "<group>"; };
+		7C380FD91F61056C00FE4C89 /* AstroProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AstroProtocol.swift; sourceTree = "<group>"; };
+		7C380FDE1F61223D00FE4C89 /* EventAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventAPI.swift; sourceTree = "<group>"; };
+		7C380FE41F61229E00FE4C89 /* Event.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
+		7C380FEB1F6131A100FE4C89 /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Constant.swift; path = assignment/Constants/Constant.swift; sourceTree = SOURCE_ROOT; };
+		7C380FEE1F6132E400FE4C89 /* EventAPITest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventAPITest.swift; sourceTree = "<group>"; };
 		918C36929E3158538CAEA725 /* Pods_assignment.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_assignment.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9252C43EB7634443E5FF605A /* Pods-assignmentTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-assignmentTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-assignmentTests/Pods-assignmentTests.debug.xcconfig"; sourceTree = "<group>"; };
 		C99D1CA95C8D653F6E494696 /* Pods-assignment.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-assignment.release.xcconfig"; path = "Pods/Target Support Files/Pods-assignment/Pods-assignment.release.xcconfig"; sourceTree = "<group>"; };
@@ -89,6 +114,10 @@
 		7C380FA61F60D90100FE4C89 /* assignment */ = {
 			isa = PBXGroup;
 			children = (
+				7C380FEA1F61318500FE4C89 /* Constants */,
+				7C380FD81F61053000FE4C89 /* Protocol */,
+				7C380FD01F60E06300FE4C89 /* Model */,
+				7C380FC71F60DD3F00FE4C89 /* APIs */,
 				7C380FA71F60D90100FE4C89 /* AppDelegate.swift */,
 				7C380FA91F60D90100FE4C89 /* ViewController.swift */,
 				7C380FAB1F60D90100FE4C89 /* Main.storyboard */,
@@ -102,10 +131,56 @@
 		7C380FBB1F60D90200FE4C89 /* assignmentTests */ = {
 			isa = PBXGroup;
 			children = (
+				7C380FC81F60DD4900FE4C89 /* APIs */,
 				7C380FBC1F60D90200FE4C89 /* assignmentTests.swift */,
 				7C380FBE1F60D90200FE4C89 /* Info.plist */,
 			);
 			path = assignmentTests;
+			sourceTree = "<group>";
+		};
+		7C380FC71F60DD3F00FE4C89 /* APIs */ = {
+			isa = PBXGroup;
+			children = (
+				7C380FCC1F60DDDA00FE4C89 /* AstroRestAPI.swift */,
+				7C380FCE1F60DE8800FE4C89 /* ChannelAPI.swift */,
+				7C380FDE1F61223D00FE4C89 /* EventAPI.swift */,
+			);
+			path = APIs;
+			sourceTree = "<group>";
+		};
+		7C380FC81F60DD4900FE4C89 /* APIs */ = {
+			isa = PBXGroup;
+			children = (
+				7C380FD31F60F52100FE4C89 /* ChannelAPITest.swift */,
+				7C380FEE1F6132E400FE4C89 /* EventAPITest.swift */,
+			);
+			path = APIs;
+			sourceTree = "<group>";
+		};
+		7C380FD01F60E06300FE4C89 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				7C380FD11F60E0D100FE4C89 /* Channel.swift */,
+				7C380FE41F61229E00FE4C89 /* Event.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		7C380FD81F61053000FE4C89 /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				7C380FD91F61056C00FE4C89 /* AstroProtocol.swift */,
+			);
+			path = Protocol;
+			sourceTree = "<group>";
+		};
+		7C380FEA1F61318500FE4C89 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				7C380FEB1F6131A100FE4C89 /* Constant.swift */,
+			);
+			name = Constants;
+			path = "New Group";
 			sourceTree = "<group>";
 		};
 		A92B36E09D57F01A602E2CE3 /* Frameworks */ = {
@@ -343,8 +418,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7C380FE51F61229E00FE4C89 /* Event.swift in Sources */,
 				7C380FAA1F60D90100FE4C89 /* ViewController.swift in Sources */,
+				7C380FEC1F6131A100FE4C89 /* Constant.swift in Sources */,
+				7C380FDF1F61223D00FE4C89 /* EventAPI.swift in Sources */,
+				7C380FDA1F61056C00FE4C89 /* AstroProtocol.swift in Sources */,
+				7C380FD21F60E0D100FE4C89 /* Channel.swift in Sources */,
 				7C380FA81F60D90100FE4C89 /* AppDelegate.swift in Sources */,
+				7C380FCD1F60DDDA00FE4C89 /* AstroRestAPI.swift in Sources */,
+				7C380FCF1F60DE8800FE4C89 /* ChannelAPI.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -352,7 +434,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7C380FE61F61229E00FE4C89 /* Event.swift in Sources */,
+				7C380FD41F60F52100FE4C89 /* ChannelAPITest.swift in Sources */,
+				7C380FED1F6131A100FE4C89 /* Constant.swift in Sources */,
+				7C380FDB1F61064500FE4C89 /* AstroProtocol.swift in Sources */,
+				7C380FD61F60F5C400FE4C89 /* Channel.swift in Sources */,
 				7C380FBD1F60D90200FE4C89 /* assignmentTests.swift in Sources */,
+				7C380FD51F60F5B200FE4C89 /* ChannelAPI.swift in Sources */,
+				7C380FF01F6132E400FE4C89 /* EventAPITest.swift in Sources */,
+				7C380FE31F61228500FE4C89 /* EventAPI.swift in Sources */,
+				7C380FD71F60F5CF00FE4C89 /* AstroRestAPI.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -504,7 +595,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.astro.assignment;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -520,7 +611,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.astro.assignment;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
