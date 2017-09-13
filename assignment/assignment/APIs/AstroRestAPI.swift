@@ -11,7 +11,6 @@ import Alamofire
 
 class AstroRestAPI<T:JsonObjectSerializable> : NSObject {
     
-    // astro apis endpoint
     internal func apiPath() -> String {
         return ""
     }

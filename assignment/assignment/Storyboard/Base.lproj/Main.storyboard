@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13189.4" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Xmw-uw-c1k">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13165.3"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Channel Guide-->
+        <scene sceneID="2DY-Fa-iPc">
+            <objects>
+                <tableViewController id="VBy-Im-x68" customClass="ChannelGuideTableViewController" customModule="assignment" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="o7F-3o-x9d">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="channelTableCellIdentifier" id="YAC-tm-FAB">
+                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="YAC-tm-FAB" id="RZt-kl-U0R">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="VBy-Im-x68" id="Rr6-6K-IXw"/>
+                            <outlet property="delegate" destination="VBy-Im-x68" id="nGt-hG-EIu"/>
+                        </connections>
+                    </tableView>
+                    <tabBarItem key="tabBarItem" title="Channel Guide" id="xNt-gb-bOq"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MX4-4Y-uz4" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="626" y="215"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="8EA-G2-UcC">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="Xmw-uw-c1k" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="waE-nw-nie">
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="sEA-XX-63f" kind="relationship" relationship="viewControllers" id="VzO-i5-P11"/>
+                        <segue destination="VBy-Im-x68" kind="relationship" relationship="viewControllers" id="z0H-j0-Qvw"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jIM-ta-lxS" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-553" y="639"/>
+        </scene>
+        <!--TV Guide-->
+        <scene sceneID="OJZ-XJ-20W">
+            <objects>
+                <viewController id="sEA-XX-63f" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="LoH-BZ-QlF">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <viewLayoutGuide key="safeArea" id="IxW-bH-kKn"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="TV Guide" id="fUX-Ik-IKA"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zJw-NV-NZf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="702" y="1024"/>
+        </scene>
+    </scenes>
+</document>

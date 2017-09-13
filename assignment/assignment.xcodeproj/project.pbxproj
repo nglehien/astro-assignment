@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		7C380FA81F60D90100FE4C89 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C380FA71F60D90100FE4C89 /* AppDelegate.swift */; };
-		7C380FAA1F60D90100FE4C89 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C380FA91F60D90100FE4C89 /* ViewController.swift */; };
 		7C380FAD1F60D90100FE4C89 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7C380FAB1F60D90100FE4C89 /* Main.storyboard */; };
 		7C380FAF1F60D90100FE4C89 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7C380FAE1F60D90100FE4C89 /* Assets.xcassets */; };
 		7C380FB21F60D90100FE4C89 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7C380FB01F60D90100FE4C89 /* LaunchScreen.storyboard */; };
@@ -29,6 +28,7 @@
 		7C380FEC1F6131A100FE4C89 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C380FEB1F6131A100FE4C89 /* Constant.swift */; };
 		7C380FED1F6131A100FE4C89 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C380FEB1F6131A100FE4C89 /* Constant.swift */; };
 		7C380FF01F6132E400FE4C89 /* EventAPITest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C380FEE1F6132E400FE4C89 /* EventAPITest.swift */; };
+		7C380FFA1F639DDB00FE4C89 /* ChannelGuideTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C380FF91F639DDB00FE4C89 /* ChannelGuideTableViewController.swift */; };
 		91632DFD73DCDC0B8F6E32B5 /* Pods_assignmentTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9DB8767BDAABFFB32C69ED2 /* Pods_assignmentTests.framework */; };
 		A702F0964AC7E58EA53C0499 /* Pods_assignment.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 918C36929E3158538CAEA725 /* Pods_assignment.framework */; };
 /* End PBXBuildFile section */
@@ -48,7 +48,6 @@
 		54A6317D417AF2D070531400 /* Pods-assignment.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-assignment.debug.xcconfig"; path = "Pods/Target Support Files/Pods-assignment/Pods-assignment.debug.xcconfig"; sourceTree = "<group>"; };
 		7C380FA41F60D90100FE4C89 /* assignment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = assignment.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7C380FA71F60D90100FE4C89 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		7C380FA91F60D90100FE4C89 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		7C380FAC1F60D90100FE4C89 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		7C380FAE1F60D90100FE4C89 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7C380FB11F60D90100FE4C89 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -65,6 +64,7 @@
 		7C380FE41F61229E00FE4C89 /* Event.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
 		7C380FEB1F6131A100FE4C89 /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Constant.swift; path = assignment/Constants/Constant.swift; sourceTree = SOURCE_ROOT; };
 		7C380FEE1F6132E400FE4C89 /* EventAPITest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventAPITest.swift; sourceTree = "<group>"; };
+		7C380FF91F639DDB00FE4C89 /* ChannelGuideTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelGuideTableViewController.swift; sourceTree = "<group>"; };
 		918C36929E3158538CAEA725 /* Pods_assignment.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_assignment.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9252C43EB7634443E5FF605A /* Pods-assignmentTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-assignmentTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-assignmentTests/Pods-assignmentTests.debug.xcconfig"; sourceTree = "<group>"; };
 		C99D1CA95C8D653F6E494696 /* Pods-assignment.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-assignment.release.xcconfig"; path = "Pods/Target Support Files/Pods-assignment/Pods-assignment.release.xcconfig"; sourceTree = "<group>"; };
@@ -118,11 +118,10 @@
 				7C380FD81F61053000FE4C89 /* Protocol */,
 				7C380FD01F60E06300FE4C89 /* Model */,
 				7C380FC71F60DD3F00FE4C89 /* APIs */,
+				7C380FF81F639DBA00FE4C89 /* ViewControllers */,
 				7C380FA71F60D90100FE4C89 /* AppDelegate.swift */,
-				7C380FA91F60D90100FE4C89 /* ViewController.swift */,
-				7C380FAB1F60D90100FE4C89 /* Main.storyboard */,
+				7C380FF71F62584000FE4C89 /* Storyboard */,
 				7C380FAE1F60D90100FE4C89 /* Assets.xcassets */,
-				7C380FB01F60D90100FE4C89 /* LaunchScreen.storyboard */,
 				7C380FB31F60D90100FE4C89 /* Info.plist */,
 			);
 			path = assignment;
@@ -181,6 +180,23 @@
 			);
 			name = Constants;
 			path = "New Group";
+			sourceTree = "<group>";
+		};
+		7C380FF71F62584000FE4C89 /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				7C380FAB1F60D90100FE4C89 /* Main.storyboard */,
+				7C380FB01F60D90100FE4C89 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		7C380FF81F639DBA00FE4C89 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				7C380FF91F639DDB00FE4C89 /* ChannelGuideTableViewController.swift */,
+			);
+			path = ViewControllers;
 			sourceTree = "<group>";
 		};
 		A92B36E09D57F01A602E2CE3 /* Frameworks */ = {
@@ -335,12 +351,14 @@
 				"${SRCROOT}/Pods/Target Support Files/Pods-assignment/Pods-assignment-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/Bolts-Swift/BoltsSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/PKHUD/PKHUD.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/BoltsSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PKHUD.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -418,8 +436,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7C380FFA1F639DDB00FE4C89 /* ChannelGuideTableViewController.swift in Sources */,
 				7C380FE51F61229E00FE4C89 /* Event.swift in Sources */,
-				7C380FAA1F60D90100FE4C89 /* ViewController.swift in Sources */,
 				7C380FEC1F6131A100FE4C89 /* Constant.swift in Sources */,
 				7C380FDF1F61223D00FE4C89 /* EventAPI.swift in Sources */,
 				7C380FDA1F61056C00FE4C89 /* AstroProtocol.swift in Sources */,
